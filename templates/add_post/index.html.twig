@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Création d'article!{% endblock %}
+
+{% block content %}
+<div class="container">
+<h1 class="text-center fst-italic">Création d'articles </h1>
+<p class="fw-bold text-center">ici vous allez pouvoir creer votre propre article </p>
+
+{{ form_start(form) }}
+
+    {{form_row(form.title)}}
+
+    {{form_row(form.content)}} 
+
+    {{form_row(form.submit)}}
+
+{{ form_end(form) }}
+</div>
+
+
+{% endblock %}
